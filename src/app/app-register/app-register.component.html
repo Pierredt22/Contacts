@@ -1,0 +1,20 @@
+<div class="card mt-5" style="margin:auto;width: 600px;">
+<div class="card-body">
+  <h5 class="card-title">Registration</h5>
+
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="userDetails.userName" class="form-control" placeholder="Username">
+    </div>
+
+    <div class="form-group">
+        <input type="password" [(ngModel)]="userDetails.password" class="form-control" placeholder="Password">
+      </div>
+
+
+
+        <button class="btn btn-primary" (click)="addUser()">Register</button>
+        <a class="btn btn-link" routerLink="/Login">Cancel</a>
+
+
+  </div>

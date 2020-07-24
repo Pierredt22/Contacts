@@ -1,0 +1,16 @@
+<div class="card mt-5" style="margin:auto;width: 600px;">
+    <div class="card-body">
+      <h5 class="card-title">My Contacts Login</h5>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Username" [(ngModel)]="username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="password">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="tryLogin()">Login</button>
+      <a class="btn btn-link" routerLinkActive="active" routerLink="/register">Registration</a> 
+     
+    </div>
+  </div>
